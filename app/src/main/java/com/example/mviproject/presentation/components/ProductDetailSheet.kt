@@ -17,8 +17,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Close
 import androidx.compose.material.icons.rounded.Delete
 import androidx.compose.material.icons.rounded.Edit
-import androidx.compose.material.icons.rounded.Email
-import androidx.compose.material.icons.rounded.Phone
+import androidx.compose.material.icons.rounded.Info
+import androidx.compose.material.icons.rounded.ShoppingCart
 import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -75,14 +75,14 @@ fun ProductDetailSheet(
                 ProductInfoSection(
                     title = "Description",
                     value = selectedProduct?.description ?: "-",
-                    icon = Icons.Rounded.Phone,
+                    icon = Icons.Rounded.Info,
                     modifier = Modifier.fillMaxWidth()
                 )
                 Spacer(Modifier.height(16.dp))
                 ProductInfoSection(
                     title = "Category",
                     value = selectedProduct?.category ?: "-",
-                    icon = Icons.Rounded.Email,
+                    icon = Icons.Rounded.ShoppingCart,
                     modifier = Modifier.fillMaxWidth()
                 )
             }
